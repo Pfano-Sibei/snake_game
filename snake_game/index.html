@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mvelows Snake Game</h1>
+  <audio id="eatSound" src="beep.mp3" preload="auto"></audio>
+<audio id="eatSound" src="beep.mp3" preload="auto"></audio>
+<audio id="gameOverSound" src="gameover.mp3" preload="auto"></audio>
+
+  <div id="scoreBoard">Score: 0</div>
+<canvas id="gameCanvas" width="400" height="400"></canvas>
+  
+  <div class="controls">
+  <button onclick="setDirection('up')">⬆️</button>
+  <div>
+    <button onclick="setDirection('left')">⬅️</button>
+    <button onclick="setDirection('right')">➡️</button>
+  </div>
+  <button onclick="setDirection('down')">⬇️</button>
+</div>
+<button id="pauseBtn">Pause</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
